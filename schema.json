@@ -1,0 +1,222 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Resume Schema",
+    "description": "Schema for a professional resume in JSON format",
+    "type": "object",
+    "properties": {
+      "personal_info": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name of the individual"
+          },
+          "title": {
+            "type": "string",
+            "description": "Professional title or position"
+          },
+          "location": {
+            "type": "string",
+            "description": "Current location/city"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Professional email address"
+          },
+          "citizenship": {
+            "type": "string",
+            "description": "Citizenship information"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Contact phone number"
+          },
+          "github": {
+            "type": "string",
+            "description": "github link"
+          }
+        },
+        "required": ["name", "title", "email"],
+        "additionalProperties": false
+      },
+      "professional_summary": {
+        "type": "string",
+        "description": "Professional summary/objective"
+      },
+      "skills": {
+        "type": "object",
+        "properties": {
+          "programming_languages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of programming language"
+                },
+                "proficiency": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,3}%$",
+                  "description": "Proficiency level as percentage"
+                }
+              },
+              "required": ["name", "proficiency"],
+              "additionalProperties": false
+            }
+          },
+          "cloud_technologies": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Cloud technology or service"
+            }
+          },
+          "ai_ml": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "AI/ML technology or framework"
+            }
+          },
+          "devops": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "DevOps tool or practice"
+            }
+          }
+        },
+        "required": ["programming_languages", "cloud_technologies", "ai_ml", "devops"],
+        "additionalProperties": false
+      },
+      "work_experience": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string",
+              "description": "Name of employer"
+            },
+            "position": {
+              "type": "string",
+              "description": "Job title/position"
+            },
+            "period": {
+              "type": "string",
+              "description": "Employment period (e.g., '2020 - Present')"
+            },
+            "responsibilities": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Job responsibility or achievement"
+              }
+            }
+          },
+          "required": ["company", "position", "period", "responsibilities"],
+          "additionalProperties": false
+        }
+      },
+      "projects": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Project name"
+            },
+            "description": {
+              "type": "string",
+              "description": "Project description"
+            },
+            "url": {
+              "type": "string",
+              "description": "github link"
+            },
+            "technologies": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Technology used in project"
+              }
+            }
+          },
+          "required": ["name", "description", "technologies"],
+          "additionalProperties": false
+        }
+      },
+      "education": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "degree": {
+              "type": "string",
+              "description": "Degree or qualification earned"
+            },
+            "year": {
+              "type": "string",
+              "description": "Year of completion"
+            }
+          },
+          "required": ["degree", "year"],
+          "additionalProperties": false
+        }
+      },
+      "certifications": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Certification name"
+            },
+            "year": {
+              "type": "string",
+              "description": "Year obtained (or planned)"
+            }
+          },
+          "required": ["name", "year"],
+          "additionalProperties": false
+        }
+      },
+      "references": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Reference's full name"
+            },
+            "position": {
+              "type": "string",
+              "description": "Reference's position"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Reference's phone number"
+            }
+          },
+          "required": ["name", "position", "phone"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "personal_info",
+      "professional_summary",
+      "skills",
+      "work_experience",
+      "projects",
+      "education",
+      "certifications",
+      "references"
+    ],
+    "additionalProperties": false
+  }

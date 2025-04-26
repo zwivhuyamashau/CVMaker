@@ -1,0 +1,142 @@
+{
+  "personal_info": {
+      "name": "Alex Johnson",
+      "title": "Software Engineer",
+      "location": "Cape Town, South Africa",
+      "email": "alex.johnson@example.com",
+      "citizenship": "South African Citizen",
+      "phone": "081 234 5678",
+      "github": "https://github.com/alexjohnson"
+  },
+  "professional_summary": "Passionate Software Engineer with 5+ years of experience in cloud computing, full-stack development, and AI solutions. AWS Certified Architect skilled in scalable system design, CI/CD automation, and AI integrations. Known for delivering technical solutions that meet business goals and mentoring junior developers.",
+  "skills": {
+      "programming_languages": [
+          {"name": "Python", "proficiency": "90%"},
+          {"name": "JavaScript", "proficiency": "85%"},
+          {"name": "TypeScript", "proficiency": "80%"},
+          {"name": "Kotlin", "proficiency": "75%"}
+      ],
+      "cloud_technologies": [
+          "AWS Lambda",
+          "API Gateway",
+          "DynamoDB",
+          "S3",
+          "EC2",
+          "VPC",
+          "Docker",
+          "Serverless"
+      ],
+      "ai_ml": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenAI",
+          "LangChain",
+          "Computer Vision"
+      ],
+      "devops": [
+          "AWS CDK",
+          "CloudFormation",
+          "CI/CD",
+          "CodePipeline",
+          "GitHub",
+          "CloudWatch",
+          "X-Ray"
+      ]
+  },
+  "work_experience": [
+      {
+          "company": "Tech Solutions Inc.",
+          "position": "Software Engineer",
+          "period": "2023 - Present",
+          "responsibilities": [
+              "Designed and built scalable cloud services with AWS technologies",
+              "Optimized CI/CD pipelines to improve deployment efficiency",
+              "Developed full-stack solutions using Python, TypeScript, and React",
+              "Mentored junior developers and led code review sessions"
+          ]
+      },
+      {
+          "company": "Innovatech",
+          "position": "Junior Software Developer",
+          "period": "2020 - 2023",
+          "responsibilities": [
+              "Created internal tools to automate business workflows",
+              "Enhanced system performance through refactoring legacy code",
+              "Assisted in cloud migrations and serverless application development"
+          ]
+      },
+      {
+          "company": "BrightCloud",
+          "position": "Cloud Support Associate",
+          "period": "2018 - 2020",
+          "responsibilities": [
+              "Provided technical support for cloud customers",
+              "Troubleshot networking and service configuration issues",
+              "Authored knowledge base articles to assist customer self-service"
+          ]
+      }
+  ],
+  "projects": [
+      {
+          "name": "Smart Resume Builder",
+          "description": "An AI-powered tool that generates customized resumes based on job descriptions.",
+          "technologies": ["GenAI", "NLP"],
+          "url": "https://github.com/alexjohnson/SmartResumeBuilder"
+      },
+      {
+          "name": "AI Video Generator",
+          "description": "An open-source project that creates videos using Stable Diffusion and AI models.",
+          "technologies": ["Stable Diffusion", "LLM"]
+      },
+      {
+          "name": "GitHub Code Assistant",
+          "description": "AI-based code suggestion tool integrated with GitHub repositories.",
+          "technologies": ["RAG", "LangChain"],
+          "url": "https://github.com/alexjohnson/GitHubCodeAssistant"
+      },
+      {
+          "name": "MediConnect FE",
+          "description": "A React web app that helps users find doctors and manage medical appointments.",
+          "technologies": ["React", "OpenAI", "Google Places API", "Chakra UI"],
+          "url": "https://github.com/alexjohnson/MediConnectFE"
+      },
+      {
+          "name": "MediConnect BE",
+          "description": "Backend services for a healthcare app built with AWS serverless architecture.",
+          "technologies": ["AWS Lambda", "API Gateway", "OpenAPI 3.0", "Python"],
+          "url": "https://github.com/alexjohnson/MediConnectBE"
+      }
+  ],
+  "education": [
+      {
+          "degree": "BSc Computer Science",
+          "year": "2018"
+      }
+  ],
+  "certifications": [
+      {
+          "name": "AWS Certified Solutions Architect",
+          "year": "2019"
+      },
+      {
+          "name": "AWS Certified Machine Learning - Specialty",
+          "year": "2025"
+      },
+      {
+          "name": "AWS Certified DevOps Engineer",
+          "year": "2025 (Planned)"
+      }
+  ],
+  "references": [
+      {
+          "name": "Jamie Smith",
+          "position": "Senior Developer at Cloudify",
+          "phone": "082 111 2233"
+      },
+      {
+          "name": "Thandi Mokoena",
+          "position": "Software Engineer at FinTech SA",
+          "phone": "083 456 7890"
+      }
+  ]
+}
